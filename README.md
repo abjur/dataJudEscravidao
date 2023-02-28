@@ -8,6 +8,8 @@ Repositório para armazenar dados utilizados para gerar o gráfico sobre process
 
 ![](plot.png)
 
+Dados em excel na pasta [data-raw](https://github.com/abjur/dataJudEscravidao/tree/main/data-raw).
+
 ## Licença
 
 MIT

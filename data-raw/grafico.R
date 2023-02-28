@@ -46,7 +46,6 @@ da_plot <- da_escravidao |>
     "ind3" ~ "Baixados"
   ))
 
-
 # visualizacao ------------------------------------------------------------
 
 sf <- geobr::read_state()
@@ -77,3 +76,9 @@ da_plot |>
     subtitle = "Processos relacionados a trabalho análogo à escravidão",
     caption = glue::glue("Fonte: DataJud\nCódigo: {codigo_link}")
   )
+
+
+# export ------------------------------------------------------------------
+
+writexl::write_xlsx(da_escravidao, "data-raw/da_escravidao.xlsx")
+writexl::write_xlsx(da_plot, "data-raw/da_plot.xlsx")
